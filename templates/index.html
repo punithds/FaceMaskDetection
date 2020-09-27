@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Face mask Detector</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style_index.css')}}">
+</head> 
+<body>
+	<h1>Hi,Welcome to Face mask Tagger</h1>
+	<p>You have images of folks and you wanted to inspect and tag with "mask" or "no mask"?</p>
+
+	<p>You have come to right place,please upload your image and press submitted button to get it tagged</p>
+	<div>
+		<form id="picture" action="upload" method="post" enctype="multipart/form-data">
+  <input type="file" name="file" id="fileToUpload" accept="image/*">
+  <input type="submit" value="Go>" name="submit" id="uim">
+</form>
+
+	</div>
+</body>
+</html>
