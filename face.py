@@ -30,12 +30,11 @@ def upload():
 		tag.draw_box_predicted()
 
 		name=os.path.join("./static/images",uploaded_file.filename)
-	# destin=os.path.join(APP_ROOT,"static/download.jpeg")
-	# name="Very Good"
-	return render_template('complete.html', name=name)
+	
+	return render_template('index.html', name=name)
 
 if __name__ == '__main__':
-	app.run(debug=True,host='0.0.0.0')
+	app.run(port=4956,debug=True)
 
 # import os
 # # print(os.getcwd())
